@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html ng-app="portfolio">
+<head>
+	<title>Christian Mockett</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="portfolioController">
+	<nav class="navbar navbar-default navbar-fixed-top nav-properties">
+		<div class="container-fluid">
+			<div class="row">
+				<h3 class="scoot-right">Christian Mockett</h3>
+			</div>
+			<div class="row">
+				<div class="nav-link-divs">
+					<h4 ng-click="bioButton()" class="nav-links">Bio</h4>
+				</div>
+				<div class="nav-link-divs">
+					<h4 ng-click="skillsButton()" class="nav-links">Skills</h4>
+				</div>
+				<div class="nav-link-divs">
+					<h4 ng-click="projectsButton()" class="nav-links">Projects</h4>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div ng-hide="bioHide" class="bio-align bio-prop">
+				<div class="row">
+					<div class="col-xs-4">
+					</div>
+					<div class="col-xs-4">
+						<img class="CMpic-align" src="images/CMportfoliopic.jpg">
+					</div>
+					<div class="col-xs-4">
+					</div>
+				</div>
+				<div class="row">
+					<p>I'm a full stack web developer who has explored the world of computers and programming from a young age.  From early interests in "modding" video games and web design to my more recent interests in music production and synthesizer programming, I have always been captivated by the ways technology can expand the world of possibilities, ingenuity, and creativity.  With music as well as computer programming, I really enjoy working within and exploring logical systems in creative ways.</p>
+				</div>
+		</div>
+		<div ng-hide="skillsHide" class="row skills-align skills-prop">
+			<div class="row">
+				<div class="col-xs-6">
+					<img class="profile-pic image1" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/AngularJS_logo.svg">
+				</div>
+				<div class="col-xs-6">
+					<img class="profile-pic image2" src="https://upload.wikimedia.org/wikipedia/en/4/45/MongoDB-Logo.svg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<img class="profile-pic image3" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png">
+				</div>
+				<div class="col-xs-6">
+					<img class="profile-pic image4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1024px-Node.js_logo.svg.png">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">
+				</div>
+				<div class="col-xs-6">
+					<img class="profile-pic image5" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/CSS3_and_HTML5_badges.svg">
+				</div>
+				<div class="col-xs-3">
+				</div>
+			</div>
+		</div>
+		<div ng-hide="projectsHide" class="row projects-align proj-prop">
+			<a href="http://104.236.111.47/">Ear Training Web App for Musicians</a>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
